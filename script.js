@@ -1,40 +1,37 @@
-console.log("----------Datatypes--------");
+console.log("hellow world");
+// single line comment
 
-console.log("1.Numbers");
-let numInt = 34; //intiger datatype
-console.log("type of numInt = " + typeof(numInt));
-console.log(" numInt = " + numInt);
+/* multi 
+line
+ comment*/
 
-let numFloat = 35.4; //floating datatype;
-console.log(" numFloat = " + numFloat);
 
-console.log("2.String");
-// sequence of charecters inside a quotes.(" " or ' ' or ` `) 
-let name = "poorvaj";
-console.log(" name = " + name);
+console.log("------variables------")
+console.log("1.var")
+var a = 10;
+console.log("Befor change the value of a = " + a);
+var a = 20;
+console.log("After change the value of a = " + a);
 
-console.log("3. boole");
-let boo = true;
-console.log(typeof(boo));
-console.log("4.undifined");
-let un;
-console.log("type of un = " + typeof(un));
+console.log("2. let")
+    //let is a block-level scope means works only where it is declared;
+let b = 34;
 
-console.log("5.NULL");
-let a = null;
-console.log(" type of a =" + typeof(a));
+// let b=24;   <-- this line give the error becouse let cannot redeclered;
+console.log("Before change the value of b = " + b);
 
-console.log("6.object");
-let ob = { name: "poorvaj ", age: "19" }
-console.log(ob);
-console.log("type of ob = " + typeof(ob));
+b = 5; //this line don't  give Error
+console.log("After change the value of b = " + b);
 
-console.log("6.arrays");
-let arr = ["name", "poorvaj ", "age", "19"]
-console.log(arr);
-console.log("type of arr = " + typeof(ob));
 
-console.log("6.symbole");
-let sy = Symbol("name");
-console.log(sy);
-console.log("type of arr = " + typeof(sy));
+
+console.log("3.const")
+
+// const  is a block-level scope means works only where it is declared
+// you dose not change the value in the const variable 
+// const c; <-- this line gives the error becous const variable must be initialized while diclaring 
+
+const c = 78;
+console.log("value of c = " + c);
+//c = 68; //this line gives error
+console.log("c value does not change becous it is contstant");
