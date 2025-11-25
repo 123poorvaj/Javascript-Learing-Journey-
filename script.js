@@ -1,37 +1,37 @@
-console.log("hellow world");
-// single line comment
+console.log("----day-3----");
+console.log("operators");
 
-/* multi 
-line
- comment*/
+console.log("1.Aritmetic operators");
+let a = 2;
+let b = 1;
+console.log("addition operater + :", a + b);
+console.log("substraction operater - :", a - b);
+console.log("multipicatin operater * :", a * b);
+console.log("division operater / :", a / b);
+console.log("modules operater % :", a % b);
+console.log("power operater ** :", a ** b);
 
+console.log("2.comparison operators");
 
-console.log("------variables------")
-console.log("1.var")
-var a = 10;
-console.log("Befor change the value of a = " + a);
-var a = 20;
-console.log("After change the value of a = " + a);
+console.log("Equals ", a == b);
+console.log("threebale equal", a === b);
+console.log("greater than : ", a > b);
+console.log("lessthan than : ", a < b);
+console.log("greaterthan or equalt :", a >= b);
+console.log("lessthan or equalt: ", a <= b);
+console.log("not equalt", a != b);
 
-console.log("2. let")
-    //let is a block-level scope means works only where it is declared;
-let b = 34;
+console.log("3.logical operater");
+console.log("logical and &&", a && b);
+console.log("logic OR:", a || b);
+console.log("logic NOT b:", !b);
+console.log("logic NOT a:", !a);
 
-// let b=24;   <-- this line give the error becouse let cannot redeclered;
-console.log("Before change the value of b = " + b);
-
-b = 5; //this line don't  give Error
-console.log("After change the value of b = " + b);
-
-
-
-console.log("3.const")
-
-// const  is a block-level scope means works only where it is declared
-// you dose not change the value in the const variable 
-// const c; <-- this line gives the error becous const variable must be initialized while diclaring 
-
-const c = 78;
-console.log("value of c = " + c);
-//c = 68; //this line gives error
-console.log("c value does not change becous it is contstant");
+console.log("4.Bitwise operater");
+console.log("Bitwise and & ", a & b);
+console.log("bitwise OR (|) :", a || b);
+console.log("bitwise XOR (^) : ", a ^ b);
+console.log("Bitwise Not ~ :", ~a);
+console.log("Bitwise right shift >>:" >> a);
+console.log("Bitwise left shift <<:" << a);
+console.log("Bitwise unasigned rigth shift >>>:" >>> a);
