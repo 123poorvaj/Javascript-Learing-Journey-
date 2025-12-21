@@ -1,18 +1,31 @@
-let number = document.getElementById("num");
-let addbtn = document.getElementById("addbtn");
-let subbtn = document.getElementById("subbtn");
-let num = 0;
+ let keypress = document.getElementById("keypress");
+ let keyreleas = document.getElementById("keyrelease");
+ let btnoff = document.getElementById("btnoff");
+ let btnon = document.getElementById("btnon");
+ btnon.style.backgroundColor = "green";
+ btnoff.style.backgroundColor = "red";
 
-addbtn.addEventListener("click", () => {
-    num++;
-    number.innerHTML = num;
-});
+ btnon.addEventListener("click", () => {
+     btnoff.style.backgroundColor = "red";
+     btnon.style.backgroundColor = "green";
+     document.addEventListener("keydown", pressoutput);
+     document.addEventListener("keyup", releasedoutput);
+ });
 
-subbtn.addEventListener('click', () => {
-    if (num > 0) {
-        num--;
-        number.innerHTML = num;
-    } else {
-        number.textContent = "0 is least Count!you cann't decrease";
-    }
-})
+ btnoff.addEventListener("click", () => {
+
+     document.removeEventListener("keydown", pressoutput);
+     document.removeEventListener("keyup", releasedoutput);
+     keypress.innerHTML = " ";
+     keyreleas.innerHTML = ' ';
+ });
+
+ function pressoutput(even) {
+     let key = even.key;
+     keypress.innerHTML = `key ${key} is presed`;
+ }
+
+ function releasedoutput(even) {
+     let key = even.key;
+     keyreleas.innerHTML = `key ${key} is presed`;
+ }
