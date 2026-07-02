@@ -1,5 +1,5 @@
 //javascript object
-
+//
 //how to create object
 //1. object literal syntax
 let person = {
